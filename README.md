@@ -70,7 +70,6 @@ The README follows the same section order as the brief, so you can read the two 
 |---|---|
 | `market_intelligence_brief.pdf` | The written brief: findings, recommendations, evidence log |
 | `rafiki_harvest_foods_dataset.xlsm` | Workbook with the source tables, the VBA macro, and the generated dashboard |
-| `csvs.zip` | CSV exports of the same tables (sales, enquiries, production capacity, products, certifications, customer feedback) |
 | `README.md` | This guide |
 | `sales_orders` (sheet) | Order-line sales data, January 2024 to September 2026 |
 | `products` (sheet) | Product master: prices, costs, shelf life, export suitability |
