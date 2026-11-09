@@ -13,21 +13,20 @@ The README follows the same section order as the brief, so you can read the two 
 ## Contents
 
 1. [Project at a glance](#project-at-a-glance)
-2. [Quick start: running the dashboard](#quick-start-running-the-dashboard)
-3. [Project contents](#project-contents)
-4. [Section 1: Research brief summary](#section-1-research-brief-summary)
-5. [Section 2: Executive summary](#section-2-executive-summary)
-6. [Section 3: Detailed insights](#section-3-detailed-insights)
-7. [Section 4: Strategic implications and decision guidance](#section-4-strategic-implications-and-decision-guidance)
-8. [Section 5: Recommended next steps](#section-5-recommended-next-steps)
-9. [Section 6: Evaluation summary](#section-6-evaluation-summary)
-10. [Section 7: Evidence log](#section-7-evidence-log)
-11. [Section 8: Closing executive summary](#section-8-closing-executive-summary)
-12. [Data verification: what was checked against the raw data](#data-verification-what-was-checked-against-the-raw-data)
-13. [Data dictionary](#data-dictionary)
-14. [Metric definitions](#metric-definitions)
-15. [Loss reason mapping](#loss-reason-mapping)
-16. [Known data issues and limitations](#known-data-issues-and-limitations)
+2. [Project contents](#project-contents)
+3. [Section 1: Research brief summary](#section-1-research-brief-summary)
+4. [Section 2: Executive summary](#section-2-executive-summary)
+5. [Section 3: Detailed insights](#section-3-detailed-insights)
+6. [Section 4: Strategic implications and decision guidance](#section-4-strategic-implications-and-decision-guidance)
+7. [Section 5: Recommended next steps](#section-5-recommended-next-steps)
+8. [Section 6: Evaluation summary](#section-6-evaluation-summary)
+9. [Section 7: Evidence log](#section-7-evidence-log)
+10. [Section 8: Closing executive summary](#section-8-closing-executive-summary)
+11. [Data verification: what was checked against the raw data](#data-verification-what-was-checked-against-the-raw-data)
+12. [Data dictionary](#data-dictionary)
+13. [Metric definitions](#metric-definitions)
+14. [Loss reason mapping](#loss-reason-mapping)
+15. [Known data issues and limitations](#known-data-issues-and-limitations)
 
 ---
 
@@ -51,21 +50,6 @@ The README follows the same section order as the brief, so you can read the two 
 ![Dashboard KPI cards: Uganda revenue, win rates, Tanzania open pipeline, utilisation and declined units](screenshots/01_dashboard_kpi_cards.png)
 
 *Dashboard view 1. The `Dash_Rafiki` headline cards, built by the macro from the source sheets. Tanzania's open pipeline reads KES 0.10M, not the brief's KES 4.0M (see Section 3, I3).*
-
----
-
-## Quick start: running the dashboard
-
-**Requirements:** Microsoft Excel for Windows with macros enabled.
-
-1. Open `rafiki_harvest_foods_dataset.xlsm`. If the file is `.xlsx`, use **File > Save As > Excel Macro-Enabled Workbook** first. Macros cannot be saved in `.xlsx`.
-2. If Excel shows a security bar, click **Enable Content**. If the file opens in Protected View, click **Enable Editing** first. If the file was downloaded, right-click it in File Explorer, open **Properties**, tick **Unblock**, and reopen it.
-3. Press **Alt+F11**, open the module that contains `BuildRafikiDashboard`, place the cursor inside the procedure, and press **F5**.
-4. Wait for the message "Dashboard built from the workbook sheets."
-
-The macro creates two new sheets, `Dash_Rafiki` (the dashboard) and `Calc_Rafiki` (the calculations). It reads the six source sheets directly and does not import any files. Running it again rebuilds only these two sheets. Other sheets are not changed.
-
-**Required source sheets:** `sales_orders`, `products`, `export_enquiries`, `production_capacity`, `certifications`, `customer_feedback`. If any is missing, the macro stops and names it.
 
 ---
 
